@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Math</title>
+	<link rel="stylesheet" href="math.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<script>
+		//function that display value 
+		function dis(val) 
+		{ 
+			document.getElementById("result").value+=val 
+		} 
+		
+		//function that evaluates the digit and return result 
+		function solve() 
+		{ 
+			let x = document.getElementById("result").value 
+			let y = eval(x) 
+			document.getElementById("result").value = y 
+		} 
+		
+		//function that clear the display 
+		function clr() 
+		{ 
+			document.getElementById("result").value = "" 
+		}
+	</script>
+	<h1 id="Title">Math</h1>
+	<!-- for styling -->
+	<style>
+		.title {
+			margin-bottom: 10px;
+			text-align: center;
+			width: 210px;
+			color: green;
+			border: solid black 2px;
+		}
+
+		input[type="button"] {
+			background-color: green;
+			color: black;
+			border: solid black 2px;
+			width: 100%
+		}
+
+		input[type="text"] {
+			background-color: white;
+			border: solid black 2px;
+			width: 100%
+		}
+	</style>
+
+	<body>
+		<!-- create table -->
+		<div class=t itle>Calculator</div>
+		<table border="1">
+			<tr>
+				<td colspan="3"><input type="text" id="result"/></td> 
+			<!-- clr() function will call clr to clear all value -->
+			<td><input type="button" value="c" onclick="clr()"/> </td> 
+		</tr> 
+		<tr> 
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
+			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
+			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
+			<td><input type="button" value="/" onclick="dis('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
+			<td><input type="button" value="5" onclick="dis('5')"/> </td> 
+			<td><input type="button" value="6" onclick="dis('6')"/> </td> 
+			<td><input type="button" value="-" onclick="dis('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="dis('7')"/> </td> 
+			<td><input type="button" value="8" onclick="dis('8')"/> </td> 
+			<td><input type="button" value="9" onclick="dis('9')"/> </td> 
+			<td><input type="button" value="+" onclick="dis('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="dis('.')"/> </td> 
+			<td><input type="button" value="0" onclick="dis('0')"/> </td> 
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
+		</tr> 
+	</table> 
+<ul>
+  <li><a href = "Formula/Formula.html">Formula Solvers</a></li>
+  <li><a href = "Areas/area.html">Area Solvers</a></li>
+  <li><a href = "Volume_SurfaceArea/3d.html">Volume and Surface Areas Solvers</a></li>
+</ul>
+   <form>
+      <br>
+      <button class="button" id="Main_Button" formaction="../index.html">Back to the Main Page</button>
+   </form>
+  </body>
+</html>

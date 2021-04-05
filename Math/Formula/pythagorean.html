@@ -1,0 +1,33 @@
+<!-- Parts of code taken from REPL.it -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pythagorean Theorem Solver</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../math.css">
+	<meta name="viewport" content="width=device-width">
+	<link href="math.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="input">
+		<form>
+			<input id="a" placeholder="a      Ex. 3"><sup>2</sup> + <input id="b" placeholder="b      Ex. 4"><sup>2</sup> = <input id="c" placeholder="c      Ex. 5"><sup>2</sup>
+      <input type="reset">
+      </form>
+    </div>
+    <button id="submit">SOLVE</button>
+    <div id="answers">
+      <p id="message">Enter two (or all 3) values you know. Press solve and the program will give the thrid value, or if the pythagorean triangle is not possible, return an error message.</p>
+      <p id="error">No solutions</p>
+      <p id="solution"></p>
+      <p>Some common pythagorean triples are, (3, 4, 5), (6, 8,10), (5, 12, 13), (9, 12, 15), (8, 15, 17), (12, 16, 20),      (15, 20, 25), (7, 24, 25), (10, 24, 26), (20, 21, 29), (18, 24, 30), (16, 30, 34), (21, 28, 35)</p>
+    </div>
+
+    <script src="pythagorean.js"></script>
+    <form>
+     <button class="button" id="Main_Button" formaction="./Formula.html">Back</button>
+     </form>
+  </body>
+</html>
