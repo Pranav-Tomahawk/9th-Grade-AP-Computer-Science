@@ -92,6 +92,11 @@ hr{
   height: 25px;
   width: 65px;
 }
+.unit_button{
+  border: 3px black solid;
+  background-color: darkred;
+  text-decoration-color: black;
+}
 .unit_button:hover{
   background-color: #029ba6;
   border-radius: 5px;

@@ -6,16 +6,16 @@ function getVal(i) {
   return getID(i).value;
 }
 function solve() {
-  var a = parseInt(getVal("base")),
-    b = parseInt(getVal("height"));
+  var a = parseInt(getVal("length")),
+    b = parseInt(getVal("width"));
   var sol1 = getID("sol1"),
     sol2 = getID("sol2");
-  if (isNaN(a)) { sol1.innerHTML = "fill in the base" };
-  if (isNaN(b)) { sol1innerHTML = "fill in the height" };
+  if (isNaN(a)) { sol1.innerHTML = "fill in the length" };
+  if (isNaN(b)) { sol1innerHTML = "fill in the width" };
   if (isNaN(a) && isNaN(b)) { sol1.innerHTML = "you have to fill in both the blanks" }
-  sol1.innerHTML = "area = " + (a * b) / 2 + " units";
+  sol1.innerHTML = "area = " + a * b + " units";
   var perimeter = a + a + b + b;
-  //sol2.innerHTML = "perimeter = " + perimeter + " units";
+  sol2.innerHTML = "perimeter = " + perimeter + " units";
 }
 
 var submitButton = document.getElementById("submit");
